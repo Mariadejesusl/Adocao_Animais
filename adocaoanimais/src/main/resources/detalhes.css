@@ -1,0 +1,48 @@
+.details-header {
+    -fx-background-color: #D2691E;
+    -fx-padding: 22 24;
+}
+
+.details-header .details-name {
+    -fx-text-fill: white;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+}
+
+.details-card {
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+    -fx-border-color: #dddddd;
+    -fx-border-radius: 5px;
+    -fx-padding: 18;
+}
+
+.details-rotulo {
+    -fx-text-fill: #666666;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.details-valor {
+    -fx-text-fill: #38301E;
+    -fx-font-size: 15px;
+}
+
+.details-container .status-disponivel,
+.details-container .status-adotado {
+    -fx-padding: 5px 12px;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.details-container .primary-button {
+    -fx-background-color: #D2691E;
+}
+
+.details-container .primary-button:hover {
+    -fx-background-color: #b85a17;
+}
+
+.details-container {
+    -fx-background-color: #f7f7fb;
+}

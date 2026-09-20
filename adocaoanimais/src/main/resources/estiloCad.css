@@ -1,0 +1,89 @@
+
+.window-title {
+    -fx-text-fill: #191970;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+
+.form-label {
+    -fx-text-fill: #333333;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+
+.text-field {
+    -fx-background-color: #F7F7FB;
+    -fx-border-color: #D6D6D6;
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px 10px;
+    -fx-font-size: 13px;
+}
+
+.text-field:focused {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #D2691E;
+    -fx-border-width: 1.5px;
+}
+
+.combo-box {
+    -fx-background-color: #F7F7FB;
+    -fx-border-color: #D6D6D6;
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-font-size: 13px;
+}
+
+
+.combo-box:focused {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #D2691E;
+}
+
+
+.combo-box .list-cell {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #333333;
+}
+
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #FFE4C4;
+    -fx-text-fill: #D2691E;
+}
+
+.primary-button {
+    -fx-background-color: #191970;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 9px 20px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+
+.primary-button:hover {
+    -fx-background-color: #D2691E;
+}
+
+
+
+.details-container {
+    -fx-background-color: white;
+}
+
+.details-label {
+    -fx-text-fill: #38301E;
+    -fx-font-size: 14px;
+}
+
+.details-name {
+    -fx-text-fill: #191970;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+
+}

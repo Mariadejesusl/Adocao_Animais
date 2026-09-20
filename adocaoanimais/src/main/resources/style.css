@@ -1,0 +1,136 @@
+.root {
+
+    -fx-font-family: "Arial";
+    -fx-background-color: #f7f7fb;
+
+}
+
+.navbar {
+
+    -fx-background-color: #D2691E;
+}
+
+.navbar .logo {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+
+}
+.navbar .menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 9px 12px;
+    
+
+}
+.navbar .menu-button:hover {
+    -fx-background-color: #FF8C00;
+
+}
+
+.navbar .menu-button-selected {
+    -fx-background-color: #FF8C00;
+    -fx-background-radius: 5px;
+}
+.content {
+    -fx-background-color: #f7f7fb;
+}
+.page-title {
+    -fx-text-fill: #191970;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+
+}
+
+.description {
+    -fx-text-fill:#38301E;
+    -fx-font-size: 14px;
+
+}
+.primary-button {
+    -fx-background-color: #191970;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+
+}
+
+.primary-button:hover {
+    -fx-background-color: #25204a;
+}
+.list-view {
+
+    -fx-background-color: transparent;
+
+    -fx-border-color: transparent;
+
+    -fx-padding: 12px 0 0 0;
+
+}
+
+.list-cell {
+
+    -fx-background-color: white;
+
+    -fx-border-color: #dddddd;
+
+    -fx-border-radius: 5px;
+
+    -fx-background-radius: 5px;
+
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #FFF8F0;
+}
+.list-cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+
+}
+
+
+.animal-name {
+    -fx-text-fill: #191970;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+
+}
+
+.animal-data {
+    -fx-text-fill: #666666;
+    -fx-font-size: 13px;
+
+}
+
+.status-disponivel {
+    -fx-background-color: #dff5e5;
+    -fx-text-fill: #2E8B57;
+    -fx-padding: 4px 8px;
+    -fx-background-radius: 4px;
+
+}
+
+.status-adotado {
+    -fx-background-color: #eeeeee;
+    -fx-text-fill: #666666;
+    -fx-padding: 4px 8px;
+    -fx-background-radius: 4px;
+
+}
+
+.delete-button {
+    -fx-background-color: #fbe0e0;
+    -fx-text-fill: #a32626;
+    -fx-cursor: hand;
+
+}
+
+.delete-button:hover {
+    -fx-background-color: #a32626;
+    -fx-text-fill: white;
+
+}
