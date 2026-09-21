@@ -1,5 +1,4 @@
 
-Readme · MD
 <h1 align="center"><img src="./assets/icon-gato.gif" width="40" height="40" alt="Ícone" style="vertical-align: middle;"> Visual Studio Code</h1>
  
 Sistema desktop para **gerenciamento de animais disponíveis para adoção**, desenvolvido em **Java com JavaFX**. Com ele é possível cadastrar animais, consultar a lista de todos os cadastrados, ver os detalhes de cada um e remover registros.
