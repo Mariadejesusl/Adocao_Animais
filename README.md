@@ -55,7 +55,7 @@ O **Adoção Pet** é uma aplicação de interface gráfica pensada para abrigos
 
 <figure align="center">
   <img src="./assets/imagem-detalhes-do-codigo.png" alt="Estrutura do Código">
-  <figcaption>Estrutura do Código</figcaption>
+  <figcaption align="center">Estrutura do Código</figcaption>
 </figure>
 
 ---
@@ -94,7 +94,7 @@ Extraia o arquivo `adocaoanimais.rar` em uma pasta de sua preferência.
  
 Depois, em qualquer uma das IDEs abaixo, abra a pasta que contém o arquivo **`pom.xml`** (é ela que o Maven reconhece como o projeto).
 
-<h3 align=""><img src="./assets/vs-code-icon.png" width="20" height="20" alt="Ícone" style="vertical-align: middle;"> Visual Studio Code</h3>
+<h3 align=""><img src="./assets/icon-vscode.png" width="20" height="20" alt="Ícone" style="vertical-align: middle;"> Visual Studio Code</h3>
 
  
 1. Instale as extensões (aba *Extensions* ou `Ctrl+Shift+X`):
@@ -110,7 +110,7 @@ Depois, em qualquer uma das IDEs abaixo, abra a pasta que contém o arquivo **`p
 > 💡 **Alternativa:** abra o arquivo `App.java` e clique em **Run** (▶) acima do método `main`.
 > Se ocorrer o erro *"JavaFX runtime components are missing"*, use o comando Maven acima, que já configura o JavaFX automaticamente.
 
-<h3 align=""><img src="./assets/intellij-icon.png" width="20" height="20" alt="Ícone" style="vertical-align: middle;"> IntelliJ IDEA</h3>
+<h3 align=""><img src="./assets/icon-intellij.png" width="20" height="20" alt="Ícone" style="vertical-align: middle;"> IntelliJ IDEA</h3>
  
 1. Vá em **File → Open**, selecione o arquivo `pom.xml` (ou a pasta que o contém) e clique em **Open as Project**.
 2. Aguarde o IntelliJ importar o projeto e baixar as dependências do Maven. Se aparecer o botão **Load Maven Changes**, clique nele.
@@ -121,7 +121,7 @@ Depois, em qualquer uma das IDEs abaixo, abra a pasta que contém o arquivo **`p
 > - Abra o `App.java` e clique no ícone ▶ ao lado do método `main`.
 > - Ou use o terminal do IntelliJ (`Alt+F12`) com o comando `mvn clean javafx:run`.
 
-<h3 align=""><img src="./assets/icons8-java-eclipse-80.png" width="20" height="20" alt="Ícone" style="vertical-align: middle;"> Eclipse</h3>
+<h3 align=""><img src="./assets/icon-eclipse.png" width="20" height="20" alt="Ícone" style="vertical-align: middle;"> Eclipse</h3>
 
  
 1. Use uma versão do Eclipse com suporte a Maven (ex.: **Eclipse IDE for Java Developers**, que já inclui o Maven Integration for Eclipse, ou m2eclipse).
@@ -138,7 +138,7 @@ Depois, em qualquer uma das IDEs abaixo, abra a pasta que contém o arquivo **`p
 > Se aparecer o erro *"JavaFX runtime components are missing"*, use o **Maven build** descrito acima.
 
 
-<h3 align=""><img src="./assets/icons8-terminal-94.png" width="20" height="20" alt="Ícone" style="vertical-align: middle;"> Pelo terminal (qualquer sistema)</h3>
+<h3 align=""><img src="./assets/icon-terminal.png" width="20" height="20" alt="Ícone" style="vertical-align: middle;"> Pelo terminal (qualquer sistema)</h3>
 
 Dentro da pasta que contém o `pom.xml`, execute:
  
@@ -148,7 +148,7 @@ mvn clean javafx:run
  
 A janela **Adoção Pet** será aberta.
 
-<h3 align=""><img src="./assets/icons8-system-information.gif" width="20" height="20" alt="Ícone" style="vertical-align: middle;"> Solução de problemas</h3>
+<h3 align=""><img src="./assets/icon-problemas.gif" width="20" height="20" alt="Ícone" style="vertical-align: middle;"> Solução de problemas</h3>
 
  
 | Problema | Solução |
@@ -163,7 +163,7 @@ A janela **Adoção Pet** será aberta.
 ---
  
 
-<h3 align=""><img src="./assets/icons8-rocket-48.png" width="30" height="30" "alt="Ícone" style="vertical-align: middle;"> Como usar</h3>
+<h3 align=""><img src="./assets/icon-foguete.png" width="30" height="30" "alt="Ícone" style="vertical-align: middle;"> Como usar</h3>
  
 1. Na **Home**, clique em **Ver animais disponíveis** (ou em **Animais** na barra superior) para ver a lista.
 2. Clique em **Cadastrar** na barra superior, preencha o formulário e clique em **Salvar** — o animal aparece na lista.
