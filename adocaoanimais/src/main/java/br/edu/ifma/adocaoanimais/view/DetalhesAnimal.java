@@ -13,8 +13,15 @@ import javafx.stage.Stage;
 
 public class DetalhesAnimal {
 
+	public static void abrir(Animal animal) {
+        DetalhesAnimal detalhes = new DetalhesAnimal(animal);
+        detalhes.janela.show();
+    }
+
+	private final Stage janela;
+
 	public DetalhesAnimal(Animal animal) {
-        Stage janela = new Stage();
+        janela = new Stage();
         janela.setTitle("Detalhes do Animal");
         janela.initModality(Modality.APPLICATION_MODAL);
 
@@ -26,7 +33,7 @@ public class DetalhesAnimal {
 
         VBox card = new VBox(14,
                 criarLinha("Espécie", animal.getEspecie()),
-                criarLinha("Idade", animal.getIdade() + " ano(s)"),
+                criarLinha("Faixa etária", animal.getFaixaEtaria()),
                 criarLinha("Sexo", animal.getSexo()),
                 criarLinha("Porte", animal.getPorte())
         );
@@ -57,7 +64,6 @@ public class DetalhesAnimal {
         cena.getStylesheets().add(getClass().getResource("/detalhes.css").toExternalForm());
 
         janela.setScene(cena);
-        janela.show();
     }
 
     private HBox criarLinha(String rotulo, String valor) {

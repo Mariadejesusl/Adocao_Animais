@@ -5,20 +5,17 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
 
 public class TelaPrincipal extends BorderPane {
 	private final ObservableList<Animal> animais = FXCollections.observableArrayList(
-	        new Animal("Rex", "Cachorro", 2, "Macho", "Médio", "Disponível"),
-	        new Animal("Luna", "Gato", 1, "Fêmea", "Pequeno", "Disponível")
+	        new Animal("Rex", "Cachorro", "Adulto (1-7 anos)", "Macho", "Médio", "Disponível"),
+	        new Animal("Luna", "Gato", "Jovem (6 meses-1 ano)", "Fêmea", "Pequeno", "Disponível")
 	    );
 
 	    Button homeButton = new Button("Home");
@@ -74,7 +71,7 @@ public class TelaPrincipal extends BorderPane {
 	    }
 
 	    private void mostrarCadastro() {
-	        new TelaCadastro(animais);
+	        TelaCadastro.abrir(animais);
 	    }
 	   
 	}

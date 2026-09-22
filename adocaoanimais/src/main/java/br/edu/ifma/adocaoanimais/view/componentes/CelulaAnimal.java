@@ -13,7 +13,6 @@ import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
 
 public class CelulaAnimal extends ListCell<Animal> {
-	private final ObservableList<Animal> animais;
 
     Label nome = new Label();
     Label dados = new Label();
@@ -26,8 +25,6 @@ public class CelulaAnimal extends ListCell<Animal> {
     
 
     public CelulaAnimal(ObservableList<Animal> animais) {
-        this.animais = animais;
-
         nome.getStyleClass().add("animal-name");
         dados.getStyleClass().add("animal-data");
 
@@ -41,7 +38,7 @@ public class CelulaAnimal extends ListCell<Animal> {
         
         linha.setOnMouseClicked(e -> {
             if (getItem() != null) {
-                new DetalhesAnimal(getItem());
+                DetalhesAnimal.abrir(getItem());
             }
         });
     }
@@ -57,7 +54,7 @@ public class CelulaAnimal extends ListCell<Animal> {
         nome.setText(animal.getNome());
         dados.setText(
             animal.getEspecie() + "  •  " +
-            animal.getIdade() + "  •  " +
+            animal.getFaixaEtaria() + "  •  " +
             animal.getSexo() + "  •  " +
             animal.getPorte()
         );

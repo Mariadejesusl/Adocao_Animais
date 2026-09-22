@@ -16,8 +16,15 @@ import javafx.stage.Stage;
 
 public class TelaCadastro {
 
+    public static void abrir(ObservableList<Animal> animais) {
+        TelaCadastro telaCadastro = new TelaCadastro(animais);
+        telaCadastro.janela.show();
+    }
+
+    private final Stage janela;
+
     public TelaCadastro(ObservableList<Animal> animais) {
-        Stage janela = new Stage();
+        janela = new Stage();
         janela.setTitle("Cadastrar Animal");
 
         Label titulo = new Label("Cadastrar Animal");
@@ -35,8 +42,13 @@ public class TelaCadastro {
         especie.getItems().addAll("Cachorro", "Gato");
         adicionarCampo(formulario, "Espécie:", especie, 1);
 
-        TextField idade = new TextField();
-        adicionarCampo(formulario, "Idade:", idade, 2);
+        ComboBox<String> faixaEtaria = new ComboBox<>();
+        faixaEtaria.getItems().addAll(
+            "Filhote (0-5 meses)",
+            "Jovem (6 meses-1 ano)",
+            "Adulto (1-7 anos)"
+        );
+        adicionarCampo(formulario, "Faixa etária:", faixaEtaria, 2);
 
         ComboBox<String> sexo = new ComboBox<>();
         sexo.getItems().addAll("Macho", "Fêmea");
@@ -58,7 +70,7 @@ public class TelaCadastro {
             Animal novo = new Animal(
                 nome.getText(),
                 especie.getValue(),
-                Integer.parseInt(idade.getText()),
+                faixaEtaria.getValue(),
                 sexo.getValue(),
                 porte.getValue(),
                 status.getValue()
@@ -82,10 +94,12 @@ public class TelaCadastro {
 
         janela.setScene(scene);
         janela.setResizable(false);
-        janela.show();
     }
 
-    private void adicionarCampo(GridPane grid,String texto,javafx.scene.Node campo,
+    private void adicionarCampo(
+        GridPane grid,
+        String texto,
+        javafx.scene.Node campo,
         int linha) {
 
         Label label = new Label(texto);

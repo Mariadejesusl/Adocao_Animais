@@ -4,25 +4,25 @@ public class Animal {
 	private int id;
     private String nome;
     private String especie;
-    private int idade;
+    private String faixaEtaria;
     private String sexo;
     private String porte;
     private String status;
 
-    public Animal(int id, String nome, String especie, int idade,
+    public Animal(int id, String nome, String especie, String faixaEtaria,
                   String sexo, String porte, String status) {
         this.id = id;
         this.nome = nome;
         this.especie = especie;
-        this.idade = idade;
+        this.faixaEtaria = faixaEtaria;
         this.sexo = sexo;
         this.porte = porte;
         this.status = status;
     }
 
-    public Animal(String nome, String especie, int idade,
+    public Animal(String nome, String especie, String faixaEtaria,
                   String sexo, String porte, String status) {
-        this(0, nome, especie, idade, sexo, porte, status);
+        this(0, nome, especie, faixaEtaria, sexo, porte, status);
     }
 
     public int getId() {
@@ -49,12 +49,12 @@ public class Animal {
         this.especie = especie;
     }
 
-    public int getIdade() {
-        return idade;
+    public String getFaixaEtaria() {
+        return faixaEtaria;
     }
 
-    public void setIdade(int idade) {
-        this.idade = idade;
+    public void setFaixaEtaria(String faixaEtaria) {
+        this.faixaEtaria = faixaEtaria;
     }
 
     public String getSexo() {
@@ -86,4 +86,3 @@ public class Animal {
         return nome;
     }
 }
-
