@@ -26,6 +26,7 @@ O **Adoção Pet** é uma aplicação de interface gráfica pensada para abrigos
 | **Cadastro de animal** | Janela com formulário para informar nome, espécie, idade, sexo, porte e status. |
 | **Detalhes do animal** | Ao clicar em um animal da lista, abre uma janela modal com todas as informações dele. |
 | **Exclusão** | Botão **Excluir** em cada card para remover o animal da lista. |
+| **Edição** | Botão **Editar** em cada card para alterar alguma informação sobre o animal da lista. |
 
 ### Dados do animal
  
@@ -33,7 +34,7 @@ O **Adoção Pet** é uma aplicação de interface gráfica pensada para abrigos
 | --- | --- |
 | Nome | Texto livre |
 | Espécie | Cachorro, Gato |
-| Idade | Número inteiro (em anos) |
+| Faixa Etária | String (em meses/anos) |
 | Sexo | Macho, Fêmea |
 | Porte | Pequeno, Médio, Grande |
 | Status | Disponível, Adotado |
@@ -54,7 +55,7 @@ O **Adoção Pet** é uma aplicação de interface gráfica pensada para abrigos
 ## 📁 Estrutura do projeto
 
 <figure align="center">
-  <img src="./assets/imagem-detalhes-do-codigo.png" alt="Estrutura do Código">
+  <img src="./assets/estrutura_projeto.png" alt="Estrutura do Código">
   <figcaption align="center">Estrutura do Código</figcaption>
 </figure>
 
