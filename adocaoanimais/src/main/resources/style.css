@@ -134,3 +134,14 @@
     -fx-text-fill: white;
 
 }
+.edit-button {
+    -fx-background-color: #f2c7fc;
+    -fx-text-fill: #973fba;
+    -fx-cursor: hand;
+}
+
+.edit-button:hover {
+    -fx-background-color: purple;
+    -fx-text-fill: white;
+
+}

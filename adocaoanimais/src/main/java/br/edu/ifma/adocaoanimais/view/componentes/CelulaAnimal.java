@@ -2,6 +2,7 @@ package br.edu.ifma.adocaoanimais.view.componentes;
 
 import br.edu.ifma.adocaoanimais.model.Animal;
 import br.edu.ifma.adocaoanimais.view.DetalhesAnimal;
+import br.edu.ifma.adocaoanimais.view.TelaEdicao;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -19,9 +20,9 @@ public class CelulaAnimal extends ListCell<Animal> {
     Label status = new Label();
     VBox informacoes = new VBox(5, nome, dados, status);
 
-    
+    Button editar = new Button("Editar");
     Button excluir = new Button("Excluir");
-    HBox linha = new HBox(15, informacoes, excluir); 
+    HBox linha = new HBox(15, informacoes, editar, excluir); 
     
 
     public CelulaAnimal(ObservableList<Animal> animais) {
@@ -32,7 +33,14 @@ public class CelulaAnimal extends ListCell<Animal> {
         linha.setAlignment(Pos.CENTER_LEFT);
         linha.setPadding(new Insets(12));
 
-        
+        editar.getStyleClass().add("edit-button");
+        editar.setOnAction(e -> { 
+            if (getItem() != null) { 
+                new TelaEdicao(getItem(), () -> { 
+                    updateItem(getItem(), false); 
+                }); 
+            } }
+        );
         excluir.getStyleClass().add("delete-button");
         excluir.setOnAction(e -> animais.remove(getItem()));
         
