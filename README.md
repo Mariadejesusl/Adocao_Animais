@@ -56,7 +56,6 @@ O **Adoção Pet** é uma aplicação de interface gráfica pensada para abrigos
 
 <figure align="center">
   <img src="./assets/estrutura_projeto.png" alt="Estrutura do Código">
-  <figcaption align="center">Estrutura do Código</figcaption>
 </figure>
 
 ---
